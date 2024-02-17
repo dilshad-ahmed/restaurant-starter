@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Ephesis&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes slow-bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.slow-bounce {
+  animation: slow-bounce 2s infinite ease-in-out;
+}
